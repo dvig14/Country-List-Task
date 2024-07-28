@@ -1,0 +1,26 @@
+.componentWrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.routingWrapper {
+  margin: 20px;
+
+  * {
+    margin: 5px;
+  }
+  a{
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    padding: 0.5rem 0.7rem;
+    text-decoration:none;
+    border-radius: 2px;
+  }
+  .active{
+    box-shadow: inset 0 0 4px rgba(199, 54, 54, 0.5);
+    font-weight: bold;
+  }
+}

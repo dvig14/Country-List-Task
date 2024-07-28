@@ -1,0 +1,48 @@
+table{
+    margin:0.5rem;
+}
+table{
+
+   th {
+      font-weight: bold;
+      background-color: #fff;
+      color:#000;
+      box-shadow:0 1px 3px hsl(0, 0%, 52%)
+   }
+   td {
+      font-weight: normal;
+    }
+    td, th {
+        padding:1rem; 
+        font-size: 1em; 
+    }
+
+    tbody{
+
+        tr{
+           &:nth-child(odd) {
+              background-color: #e9e9e9;
+              box-shadow:0 0 3px hsl(0, 0%, 52%)
+            }
+            &:nth-child(even) {
+              background-color: #c3c0c0;
+              box-shadow:0 0 3px hsl(0, 0%, 52%)
+            }
+            &:hover {
+             background-color: #bac2c8;
+           }
+        }
+
+        td{
+            &:hover {
+              background-color: rgb(218, 233, 238);
+              color:#000;
+              box-shadow:  -1px 1px #c4cfd2,
+              -2px 2px #b9caca , -3px 3px #b6c0c0 , -4px 4px #c9dee182;
+              transform: translate3d(4px, -4px, 0px);
+              transition: all 0.4s linear 0s
+            }
+        }
+          
+    }
+}
